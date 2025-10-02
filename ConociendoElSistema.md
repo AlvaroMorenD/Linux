@@ -137,7 +137,8 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## DNS
-- `nslookup google.es` -> Muestra qué DNS responde y su dirección IP.  
+- `nslookup google.es` -> Consulta el nombre de dominio `google.es` y muestra **qué servidor DNS respondió** la consulta y la **dirección IP** asociada al dominio. Responde el servidor DNS que tu sistema está usando y muestra la IP pública que corresponde al dominio
+
 - `nslookup 8.8.8.8` -> Muestra información sobre el propietario de la IP.  
 
     ![DNS](/img/DNS.png)
