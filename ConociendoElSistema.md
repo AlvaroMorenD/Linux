@@ -177,7 +177,7 @@ dns-nameservers 8.8.8.8 8.8.4.4
 
 ---
 
-## Interfaces de red (ifup/ifdown)
+## Interfaces de red
 - `ifup <TuinterfazDeRed>` -> Activa la interfaz de red especificada.  
 - `ifdown <TuinterfazDeRed>` -> Desactiva la interfaz de red especificada.  
 - `ifdown <TuinterfazDeRed> && ifup <TuinterfazDeRed>` -> Primero descativa la interfaz de red y después la vuelve a activar
