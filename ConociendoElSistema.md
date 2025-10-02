@@ -13,7 +13,7 @@ A lo largo del contenido se cubrirán temas como:
   
 ---
 
-## 🔖 Hostname
+##  Hostname
 - `hostname` -> Muestra el nombre actual del host.  
 - `hostname -I` -> Lista las direcciones IP del equipo.  
 - `hostname -f` -> Devuelve el nombre (host + dominio).
@@ -31,7 +31,7 @@ A lo largo del contenido se cubrirán temas como:
 
 ---
 
-## 🖥️ Versión del sistema
+##  Versión del sistema
 - `lsb_release -a` -> Muestra la versión de Linux instalada.
 - `cat /etc/os-release` -> Da información sobre la distribución instalada.
   
@@ -41,9 +41,10 @@ A lo largo del contenido se cubrirán temas como:
 
 ---
 
-## ⚙️ Núcleo y arquitectura
-- `uname -a` -> Información completa: kernel, compilación, arquitectura.  
-- `uname -r` -> Solo muestra la versión del kernel.
+##  Núcleo y arquitectura
+- `uname -a` -> Muestra información detallada del sistema: nombre del kernel, versión exacta, fecha de compilación, arquitectura del procesador y nombre del host.
+   
+- `uname -r` ->  Muestra la versión del kernel.
 
    ![Sistema](/img/VersionNucleo.png)
 
