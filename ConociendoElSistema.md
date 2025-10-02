@@ -7,7 +7,7 @@ A lo largo del contenido se cubrirán temas como:
 
 - Identificación del sistema y su versión.  
 - Información del kernel, memoria, CPU y discos.  
-- Gestión de usuarios, grupos y permisos.  
+- Gestión de usuarios, grupos y credenciales.  
 - Configuración y comprobación de la red.  
 - Herramientas para supervisar el estado del servidor.
   
@@ -171,16 +171,16 @@ dns-nameservers 8.8.8.8 8.8.4.4
 ---
 
 ## Reiniciar la red
-- `systemctl status networking` -> Estado actual del servicio de red.  
-- `systemctl restart networking` -> Reinicia el servicio para aplicar cambios.
+- `systemctl status networking` -> Muestra el estado actual del servicio de red, indicando si está activo, inactivo o fallando.
+- `systemctl restart networking` -> Reinicia el servicio para aplicar cambios en posibles configuraciones.
 
 ![red](/img/reiniciarRed.png)
 
 ---
 
 ## Interfaces de red (ifup/ifdown)
-- `ifup <TuinterfazDeRed>` -> Activa la interfaz de red `eth0`.  
-- `ifdown <TuinterfazDeRed>` -> Desactiva la interfaz de red `eth0`.  
+- `ifup <TuinterfazDeRed>` -> Activa la interfaz de red.  
+- `ifdown <TuinterfazDeRed>` -> Desactiva la interfaz de red.  
 - `ifdown <TuinterfazDeRed> && ifup <TuinterfazDeRed>` -> Primero descativa la interfaz de red y después la vuelve a activar
 
 ![red](/img/subirybajarRed.png)
