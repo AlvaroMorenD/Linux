@@ -60,11 +60,13 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## CPU
-- `lscpu` -> Muestra información detallada de la CPU: arquitectura, número de núcleos, hilos, velocidad de reloj, tamaño de caché y otras características del procesador.
+- `lscpu` -> Muestra información de tu CPU, en concreto: arquitectura, número de núcleos, hilos, velocidad de reloj, tamaño de caché y otras características del procesador.
+  
    ![CPU](/img/cpu.png)
-- `nproc` -> Da el número de procesadores lógicos disponibles.
+  
+- `nproc` -> Da el número de procesadores lógicos de tu procesador.
 
-     ![CPU](/img/cpu2.png)
+   ![CPU](/img/cpu2.png)
 
 
 ---
@@ -72,7 +74,10 @@ A lo largo del contenido se cubrirán temas como:
 ## 💽 Discos y particiones
 - `lsblk` -> Lista los discos y particiones en formato de árbol.  
 - `lsblk -f` -> Incluye tipo de sistema de archivos, etiquetas y UUID.  
-- `fdisk -l` -> Muestra particiones, sectores y tamaños de discos detectados.  
+- `fdisk -l` -> Muestra particiones, sectores y tamaños de discos detectados.
+
+     ![CPU](/img/discos.png)
+
 
 ---
 
