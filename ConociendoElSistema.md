@@ -163,7 +163,7 @@ dns-nameservers 8.8.8.8 8.8.4.4
 ---
 
 ## Configuración de DNS
-- `cat /etc/resolv.conf` -> Lista los servidores DNS configurados.
+- `cat /etc/resolv.conf` -> Lista los servidores DNS configurados. En mi caso los de Moviestar
 
 ![DNS](/img/configuracionDNS.png)
 
@@ -172,11 +172,16 @@ dns-nameservers 8.8.8.8 8.8.4.4
 
 ## Reiniciar la red
 - `systemctl status networking` -> Estado actual del servicio de red.  
-- `systemctl restart networking` -> Reinicia el servicio para aplicar cambios.  
+- `systemctl restart networking` -> Reinicia el servicio para aplicar cambios.
+
+![red](/img/reiniciarRed.png)
 
 ---
 
 ## Interfaces de red (ifup/ifdown)
-- `ifup eth0` -> Activa la interfaz de red `eth0`.  
-- `ifdown eth0` -> Desactiva la interfaz de red `eth0`.  
-- `ifdown eth0 && ifup eth0` -> Reinicia la interfaz aplicando configuración nueva.  
+- `ifup <TuinterfazDeRed>` -> Activa la interfaz de red `eth0`.  
+- `ifdown <TuinterfazDeRed>` -> Desactiva la interfaz de red `eth0`.  
+- `ifdown <TuinterfazDeRed> && ifup <TuinterfazDeRed>` -> Primero descativa la interfaz de red y después la vuelve a activar
+
+![red](/img/subirybajarRed.png)
+
