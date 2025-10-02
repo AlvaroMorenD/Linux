@@ -122,8 +122,12 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## Información de la red
-- `ip a` -> Lista interfaces de red, direcciones IP y su estado (UP/DOWN).  
-- `ip r` -> Muestra la tabla de enrutamiento y la puerta de enlace por defecto.  
+ Muestra todas las interfaces de red del sistema, sus direcciones IP, máscara de red, estado de la interfaz (UP/DOWN) y otra información relevante de conectividad.
+ - `ip r` -> Muestra la puerta de enlace.
+
+    ![ip](/img/red.png)
+
+
 - `ping -c 4 <PuertaDeEnlace>` -> Verifica conectividad con el gateway.  
 - `ping -c 4 google.es` -> Verifica conectividad a Internet.  
 
