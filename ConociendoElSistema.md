@@ -13,152 +13,101 @@ A lo largo del contenido se cubrirán temas como:
   
 ---
 
-## 1. Nombre del host 
-`hostname` ->  Muestra el nombre del host actual del sistema.  
-
-- **Comando:** `hostname -I`  
-  Muestra las direcciones IP asignadas al host.  
-
-- **Comando:** `hostname -f`  
-  Muestra el FQDN (Fully Qualified Domain Name), es decir, el nombre de host completo con dominio.  
-
-![host](/img/host.png)
-
-- **Comando:** `hostnamectl set-hostname NuevoNombre`  
-  Permite cambiar el nombre del host de forma permanente (requiere cerrar sesión para aplicar).  
-
-- **Comando:** `cat /etc/hostname`  
-  Muestra el nombre de host guardado en el archivo de configuración.  
-
-![hostname](/img/hostname.png)
+## 🔖 Hostname
+- `hostname` -> Muestra el nombre actual del host.  
+- `hostname -I` -> Lista las direcciones IP asignadas al equipo.  
+- `hostname -f` -> Devuelve el nombre FQDN (host + dominio).  
+- `hostnamectl set-hostname <NuevoNombre>` -> Cambia el nombre del host de forma permanente.  
+- `cat /etc/hostname` -> Lee el nombre del host almacenado en el archivo de configuración.  
 
 ---
 
-## 2. Versión del sistema 🖥️
-- **Comando:** `lsb_release -a` → Muestra la distribución de Linux y su versión.  
-- **Comando:** `cat /etc/os-release` → Muestra información detallada de la distribución.  
-- **Comando:** `cat /etc/debian_version` → Muestra la versión de Debian.  
-
-![sistema](/img/sistema.png)
+## 🖥️ Versión del sistema
+- `lsb_release -a` -> Muestra la distribución de Linux y su versión.  
+- `cat /etc/os-release` -> Muestra información detallada de la distribución instalada.  
+- `cat /etc/debian_version` -> Muestra la versión exacta de Debian.  
 
 ---
 
-## 3. Versión del núcleo y arquitectura ⚙️🔧
-- **Comando:** `uname -a` → Información completa del kernel, arquitectura y compilación.  
-- **Comando:** `uname -r` → Muestra únicamente la versión del kernel.  
-
-![nucleo](/img/nucleo.png)
+## ⚙️ Núcleo y arquitectura
+- `uname -a` -> Información completa: kernel, compilación, arquitectura.  
+- `uname -r` -> Solo muestra la versión del kernel.  
 
 ---
 
-## 4. Memoria RAM 🧠💾
-- **Comando:** `free` y `free -h`  
-  Muestran el uso de la memoria RAM y swap. La opción `-h` lo muestra en formato legible (MB/GB).  
-
-![ram](/img/ram.png)
+## 🧠 Memoria RAM
+- `free` -> Muestra el uso de la memoria RAM y SWAP.  
+- `free -h` -> Igual que el anterior, pero en formato legible (MB, GB).  
 
 ---
 
-## 5. CPU 🖥️💨
-- **Comando:** `lscpu` → Información detallada de la CPU: arquitectura, núcleos, hilos, etc.  
-- **Comando:** `nproc` → Número de procesadores lógicos disponibles.  
-
-![cpu](/img/cpu.png)
+## 💨 CPU
+- `lscpu` -> Información detallada de la CPU: arquitectura, núcleos, hilos, etc.  
+- `nproc` -> Número de procesadores lógicos disponibles.  
 
 ---
 
-## 6. Discos y particiones 💽
-- **Comando:** `lsblk` → Dispositivos de bloque (discos, particiones, etc.) en forma de árbol.  
-- **Comando:** `lsblk -f` → Incluye tipo de sistema de archivos, UUID y etiqueta.  
-- **Comando:** `fdisk -l` → Lista las particiones y discos detectados.  
-
-![discos](/img/discos.png)
+## 💽 Discos y particiones
+- `lsblk` -> Lista los discos y particiones en formato de árbol.  
+- `lsblk -f` -> Incluye tipo de sistema de archivos, etiquetas y UUID.  
+- `fdisk -l` -> Muestra particiones, sectores y tamaños de discos detectados.  
 
 ---
 
-## 7. Sistemas montados 📂
-- **Comando:** `df -h` → Uso de disco de cada sistema de archivos montado.  
-- **Comando:** `df -hT` → Incluye el tipo de sistema de archivos.  
-
-![sistemasMontados](/img/sistemasMontados.png)
+## 📂 Sistemas montados
+- `df -h` -> Uso de disco por sistema de archivos (formato legible).  
+- `df -hT` -> Igual que el anterior, pero incluye el tipo de sistema de archivos.  
 
 ---
 
-## 8. Tamaño de carpetas 📁
-- **Comando:** `du -h` → Tamaño de todos los archivos y directorios recursivamente.  
-- **Comando:** `du -h /home/` → Tamaño de archivos y subdirectorios de `/home`.  
-- **Comando:** `du -hs /home` → Tamaño total de `/home`.  
-- **Comando:** `du -hs /home/*` → Tamaño de cada subcarpeta dentro de `/home`.  
-
-![tamano](/img/tamano.png)
+## 📁 Tamaño de carpetas
+- `du -h` -> Tamaño de todos los archivos y carpetas recursivamente.  
+- `du -h /home/` -> Tamaño de todos los subdirectorios en `/home`.  
+- `du -hs /home` -> Tamaño total de la carpeta `/home`.  
+- `du -hs /home/*` -> Tamaño individual de cada subcarpeta dentro de `/home`.  
 
 ---
 
-## 9. Usuarios y grupos del sistema 👥🔒
-- **Comandos:** `cat /etc/passwd` y `getent passwd` → Lista de usuarios del sistema.  
-![passwd](/img/passwd.png)
-
-- **Comandos:** `cat /etc/shadow` y `getent shadow` → Contraseñas encriptadas (requiere root).  
-![shadow](/img/shadow.png)
-
-- **Comandos:** `cat /etc/group` y `getent group` → Lista de grupos.  
-![group](/img/group.png)
-
-- **Comandos:** `cat /etc/gshadow` y `getent gshadow` → Contraseñas de grupos.  
-![gshadow](/img/gshadow.png)
-
-- **Comando:** `cat /etc/nsswitch.conf` → Indica dónde busca el sistema la información de usuarios, grupos, hosts, etc.  
-![nsswitch](/img/nsswitch.png)
+## 👥 Usuarios y grupos
+- `cat /etc/passwd` / `getent passwd` -> Lista de usuarios del sistema.  
+- `cat /etc/shadow` / `getent shadow` -> Contraseñas encriptadas (requiere root).  
+- `cat /etc/group` / `getent group` -> Lista de grupos configurados.  
+- `cat /etc/gshadow` / `getent gshadow` -> Contraseñas de grupos.  
+- `cat /etc/nsswitch.conf` -> Define dónde busca la información (archivos locales, DNS, etc.).  
 
 ---
 
-## 10. Información de la red 🌐🌎
-- **Comando:** `ip a` → Muestra interfaces de red, direcciones IP y estado.  
-![ipa](/img/ipa.png)
-
-- **Comando:** `ip r` → Tabla de rutas y puerta de enlace.  
-![ipr](/img/ipr.png)
-
-- **Comando:** `ping -c 4 <PuertaDeEnlace>` → Verifica conectividad con el gateway.  
-- **Comando:** `ping -c 4 google.es` → Verifica conectividad a Internet.  
-
-![ping](/img/ping.png)
+## 🌐 Información de la red
+- `ip a` -> Lista interfaces de red, direcciones IP y su estado (UP/DOWN).  
+- `ip r` -> Muestra la tabla de enrutamiento y la puerta de enlace por defecto.  
+- `ping -c 4 <PuertaDeEnlace>` -> Verifica conectividad con el gateway.  
+- `ping -c 4 google.es` -> Verifica conectividad a Internet.  
 
 ---
 
-## 11. Comprobar DNS 🔍
-- **Comando:** `nslookup google.es` → Servidor DNS que responde y su IP.  
-- **Comando:** `nslookup 8.8.8.8` → Información sobre el propietario de la IP.  
-
-![dns](/img/dns.png)
+## 🔍 DNS
+- `nslookup google.es` -> Muestra qué DNS responde y su dirección IP.  
+- `nslookup 8.8.8.8` -> Muestra información sobre el propietario de la IP.  
 
 ---
 
-## 12. Configuración de la red ⚙️
-- **Comando:** `cat /etc/network/interfaces` → Configuración de interfaces de red.  
-
-![configuracion](/img/configuracion.png)
+## ⚙️ Configuración de red
+- `cat /etc/network/interfaces` -> Configuración de interfaces de red.  
 
 ---
 
-## 13. Configuración tradicional de DNS 🌐
-- **Comando:** `cat /etc/resolv.conf` → Muestra los servidores DNS configurados.  
-
-![resolv](/img/resolv.png)
+## 🌐 Configuración de DNS
+- `cat /etc/resolv.conf` -> Lista los servidores DNS configurados.  
 
 ---
 
-## 14. Reiniciar la red 🔄
-- **Comando:** `systemctl status networking` → Estado del servicio de red.  
-- **Comando:** `systemctl restart networking` → Reinicia el servicio aplicando cambios.  
-
-![reiniciarRed](/img/reiniciarRed.png)
+## 🔄 Reiniciar la red
+- `systemctl status networking` -> Estado actual del servicio de red.  
+- `systemctl restart networking` -> Reinicia el servicio para aplicar cambios.  
 
 ---
 
-## 15. Bajar o subir una tarjeta de red 🖧⬆️⬇️
-- **Comando:** `ifup eth0` → Activa la interfaz de red.  
-- **Comando:** `ifdown eth0` → Desactiva la interfaz de red.  
-- **Comando:** `ifdown eth0 && ifup eth0` → Reinicia la interfaz aplicando cambios.  
-
-![bajarYsubirTarjeta](/img/bajarYsubirTarjeta.png)
+## 🖧 Interfaces de red (ifup/ifdown)
+- `ifup eth0` -> Activa la interfaz de red `eth0`.  
+- `ifdown eth0` -> Desactiva la interfaz de red `eth0`.  
+- `ifdown eth0 && ifup eth0` -> Reinicia la interfaz aplicando configuración nueva.  
