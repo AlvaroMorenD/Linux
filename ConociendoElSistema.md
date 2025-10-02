@@ -165,7 +165,7 @@ dns-nameservers 8.8.8.8 8.8.4.4
 ## Configuración de DNS
 - `cat /etc/resolv.conf` -> Lista los servidores DNS configurados.
 
-![DNS](/img/comprobarDNS.png)
+![DNS](/img/configuracionDNS.png)
 
 
 ---
