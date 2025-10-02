@@ -37,7 +37,7 @@ A lo largo del contenido se cubrirán temas como:
   
   ![Sistema](/img/VersionSistema.png)
 
-- `cat /etc/debian_version` -> Muestra la versión exacta de Debian.  
+- `cat /etc/debian_version` -> Muestra la versión de Debian instalada en el sistema.  
 
 ---
 
@@ -83,7 +83,9 @@ A lo largo del contenido se cubrirán temas como:
 
 ## Sistemas montados
 - `df -h` -> Uso de disco por sistema de archivos (formato legible).  
-- `df -hT` -> Igual que el anterior, pero incluye el tipo de sistema de archivos.  
+- `df -hT` -> Igual que el anterior, pero incluye el tipo de sistema de archivos.
+      ![Montados](SistemasMontados/img/.png)
+
 
 ---
 
