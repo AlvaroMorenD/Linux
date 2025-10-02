@@ -83,17 +83,19 @@ A lo largo del contenido se cubrirán temas como:
 
 ## Sistemas montados
 - `df -h` -> Uso de disco por sistema de archivos (formato legible).  
-- `df -hT` -> Igual que el anterior, pero incluye el tipo de sistema de archivos.
+- `df -hT` -> Igual que el anterior, pero añade el tipo de sistema de archivos.
       ![Montados](/img/SistemasMontados.png)
 
 
 ---
 
-## Tamaño de carpetas
+## Tamaño de una carpeta
 - `du -h` -> Tamaño de todos los archivos y carpetas recursivamente.  
-- `du -h /home/` -> Tamaño de todos los subdirectorios en `/home`.  
-- `du -hs /home` -> Tamaño total de la carpeta `/home`.  
-- `du -hs /home/*` -> Tamaño individual de cada subcarpeta dentro de `/home`.  
+- `du -h /home/` -> Tamaño de todos los subdirectorios en /home.  
+- `du -hs /home` -> Tamaño total de la carpeta /home.  
+- `du -hs /home/*` -> Tamaño individual de cada subcarpeta dentro de /home.  
+      ![Carpeta](/img/Tamaño.png)
+
 
 ---
 
