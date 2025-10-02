@@ -1,4 +1,4 @@
-# 🐧 Linux - Comandos Básicos
+# 🐧 Linux - Conociendo El Sistema
 
 [Guía de comandos](ConociendoElSistema.md)
 
