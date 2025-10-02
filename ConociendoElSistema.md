@@ -24,7 +24,7 @@ A lo largo del contenido se cubrirán temas como:
 
 ![host](/img/hostname2.png)
 
-![host](/img/hostname3.png)
+![host](/img/host3.png)
 
 
 ---
