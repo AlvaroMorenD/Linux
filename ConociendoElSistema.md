@@ -101,9 +101,13 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## Usuarios y grupos
-- `cat /etc/passwd` / `getent passwd` -> Lista de usuarios del sistema.  
-- `cat /etc/shadow` / `getent shadow` -> Contraseñas encriptadas (requiere root).  
-- `cat /etc/group` / `getent group` -> Lista de grupos configurados.  
+- `cat /etc/passwd` -> Lista los usuarios del sistema.
+
+![Usuarios](/img/usuarios.png)
+
+
+- `cat /etc/shadow` -> Contraseñas encriptadas de los usuarios del sistema  
+- `cat /etc/group` -> Lista de grupos configurados.  
 - `cat /etc/gshadow` / `getent gshadow` -> Contraseñas de grupos.  
 - `cat /etc/nsswitch.conf` -> Define dónde busca la información (archivos locales, DNS, etc.).  
 
