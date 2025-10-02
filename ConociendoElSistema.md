@@ -112,7 +112,13 @@ A lo largo del contenido se cubrirán temas como:
 
 - `cat /etc/group` -> Lista de grupos configurados.
 
-- `cat /etc/gshadow` / `getent gshadow` -> Contraseñas de grupos.  
+  ![grupos](/img/grupos2.png)
+
+
+- `cat /etc/gshadow` / `getent gshadow` -> Contraseñas de grupos.
+
+    ![grupos](/img/grupos3.png)
+
 - `cat /etc/nsswitch.conf` -> Define dónde busca la información (archivos locales, DNS, etc.).  
 
 ---
