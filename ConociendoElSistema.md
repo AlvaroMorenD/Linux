@@ -60,10 +60,11 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## CPU
-- `lscpu` -> Información detallada de la CPU: arquitectura, núcleos, hilos, .  
+- `lscpu` -> Muestra información detallada de la CPU: arquitectura, número de núcleos, hilos, velocidad de reloj, tamaño de caché y otras características del procesador.
+   ![CPU](/img/cpu.png)
 - `nproc` -> Da el número de procesadores lógicos disponibles.
 
-     ![CPU](/img/CPU.png)
+     ![CPU](/img/cpu2.png)
 
 
 ---
