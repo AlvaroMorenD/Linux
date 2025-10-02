@@ -32,7 +32,10 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## 🖥️ Versión del sistema
-- `lsb_release -a` -> Muestra la distribución de Linux y su versión.  
+- `lsb_release -a` -> Muestra la distribución de Linux y su versión.
+
+![Sistema](/img/VersionSistema.png)
+
 - `cat /etc/os-release` -> Muestra información detallada de la distribución instalada.  
 - `cat /etc/debian_version` -> Muestra la versión exacta de Debian.  
 
