@@ -15,8 +15,8 @@ A lo largo del contenido se cubrirán temas como:
 
 ## 🔖 Hostname
 - `hostname` -> Muestra el nombre actual del host.  
-- `hostname -I` -> Lista las direcciones IP asignadas al equipo.  
-- `hostname -f` -> Devuelve el nombre FQDN (host + dominio).
+- `hostname -I` -> Lista las direcciones IP del equipo.  
+- `hostname -f` -> Devuelve el nombre (host + dominio).
 
 ![host](/img/hostname.png)
    
@@ -43,7 +43,10 @@ A lo largo del contenido se cubrirán temas como:
 
 ## ⚙️ Núcleo y arquitectura
 - `uname -a` -> Información completa: kernel, compilación, arquitectura.  
-- `uname -r` -> Solo muestra la versión del kernel.  
+- `uname -r` -> Solo muestra la versión del kernel.
+
+   ![Sistema](/img/VersionNucleo.png)
+
 
 ---
 
