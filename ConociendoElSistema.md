@@ -1,4 +1,4 @@
-# 1.- CONOCIENDO EL SERVIDOR LINUX 🖥️🐧
+# 1.- CONOCIENDO EL SERVIDOR LINUX 
 
 En este apartado se documentan los comandos pedidos en la tarea para conocer y administrar el servidor Linux.  
 Cada comando tiene su explicación y su captura correspondiente.
