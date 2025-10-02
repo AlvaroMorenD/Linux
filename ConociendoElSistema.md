@@ -139,14 +139,17 @@ A lo largo del contenido se cubrirán temas como:
 ## DNS
 - `nslookup google.es` -> Consulta el nombre de dominio `google.es` y muestra **qué servidor DNS respondió** la consulta y la **dirección IP** asociada al dominio. Responde el servidor DNS que tu sistema está usando y muestra la IP pública que corresponde al dominio
 
-- `nslookup 8.8.8.8` -> Muestra información sobre el propietario de la IP.  
-
-    ![DNS](/img/DNS.png)
+`nslookup 8.8.8.8` -> Consulta la dirección IP `8.8.8.8` "servidor publico de Google" y muestra información sobre su dominio inverso y propietario.  
+   
+![DNS](/img/DNS.png)
 
 ---
 
 ## Configuración de red
-- `cat /etc/network/interfaces` -> Configuración de interfaces de red.  
+- `cat /etc/network/interfaces` -> Configuración de interfaces de red. En mi caso está configurado por DHCP
+
+![RED](/img/comprobarRed.png)
+
 
 ---
 
