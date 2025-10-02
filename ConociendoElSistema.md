@@ -114,7 +114,7 @@ A lo largo del contenido se cubrirán temas como:
   ![grupos](/img/grupos2.png)
 
 
-- `cat /etc/gshadow` -> Contraseñas de grupos.
+- `cat /etc/gshadow` -> Contraseñas de cada grupo.
 
     ![grupos](/img/grupos3.png)
 
