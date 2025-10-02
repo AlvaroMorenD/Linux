@@ -93,7 +93,8 @@ A lo largo del contenido se cubrirán temas como:
 - `du -h` -> Tamaño de todos los archivos y carpetas recursivamente.  
 - `du -h /home/` -> Tamaño de todos los subdirectorios en /home.  
 - `du -hs /home` -> Tamaño total de la carpeta /home.  
-- `du -hs /home/*` -> Tamaño individual de cada subcarpeta dentro de /home.  
+- `du -hs /home/*` -> Tamaño individual de cada subcarpeta dentro de /home.
+  
       ![Carpeta](/img/Tamaño.png)
 
 
