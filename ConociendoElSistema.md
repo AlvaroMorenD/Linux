@@ -53,7 +53,10 @@ A lo largo del contenido se cubrirán temas como:
 
 ## 🧠 Memoria RAM
 - `free` -> Muestra el uso de la memoria RAM y SWAP.  
-- `free -h` -> Igual que el anterior, pero en formato legible (MB, GB).  
+- `free -h` -> Igual que el anterior, pero en formato más entendible para el usuario.
+  
+   ![RAM](/img/RAM.png)
+
 
 ---
 
