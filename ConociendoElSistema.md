@@ -107,9 +107,10 @@ A lo largo del contenido se cubrirán temas como:
 
 
 - `cat /etc/shadow` -> Contraseñas encriptadas de los usuarios del sistema
-- `cat /etc/group` -> Lista de grupos configurados.
+
 ![grupos](/img/grupos.png)
 
+- `cat /etc/group` -> Lista de grupos configurados.
 
 - `cat /etc/gshadow` / `getent gshadow` -> Contraseñas de grupos.  
 - `cat /etc/nsswitch.conf` -> Define dónde busca la información (archivos locales, DNS, etc.).  
