@@ -32,8 +32,8 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## 🖥️ Versión del sistema
-- `lsb_release -a` -> Muestra la distribución de Linux y su versión.
-- `cat /etc/os-release` -> Muestra información detallada de la distribución instalada.
+- `lsb_release -a` -> Muestra la versión de Linux instalada.
+- `cat /etc/os-release` -> Da información sobre la distribución instalada.
   
   ![Sistema](/img/VersionSistema.png)
 
