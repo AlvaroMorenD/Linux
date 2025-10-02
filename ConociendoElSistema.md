@@ -170,7 +170,7 @@ dns-nameservers 8.8.8.8 8.8.4.4
 ---
 
 ## Reiniciar la red
-- `systemctl status networking` -> Muestra el estado del servicio de red, indica si está activo, inactivo o bloqueado.
+- `systemctl status networking` -> Muestra el estado del servicio de red, indica si está activo, inactivo o bloqueado. Puede tambiém estar **enabled** o **disabled**
 - `systemctl restart networking` -> Reinicia el servicio para aplicar cambios en posibles configuraciones.
 
 ![red](/img/reiniciarRed.png)
