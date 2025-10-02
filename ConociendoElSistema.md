@@ -1,7 +1,7 @@
 # 1.- EXPLORANDO EL SERVIDOR LINUX
 
 En este documento veremos los **comandos básicos y esenciales** para conocer y administrar un servidor Linux.  
-Cada apartado explica su función, acompañado de ejemplos y capturas para facilitar la comprensión.  
+Cada apartado explica su función, acompañado de ejemplos y capturas.  
 
 A lo largo del contenido se cubrirán temas como:  
 
