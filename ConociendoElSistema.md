@@ -51,7 +51,7 @@ A lo largo del contenido se cubrirán temas como:
 
 ---
 
-## 🧠 Memoria RAM
+## Memoria RAM
 - `free` -> Muestra el uso, el espacio, la compartida y la caché y la total de la memoria RAM y SWAP.  
 - `free -h` -> Igual que el anterior, pero en formato más entendible para el usuario.
   
@@ -59,7 +59,7 @@ A lo largo del contenido se cubrirán temas como:
 
 ---
 
-## 💨 CPU
+## CPU
 - `lscpu` -> Información detallada de la CPU: arquitectura, núcleos, hilos, .  
 - `nproc` -> Da el número de procesadores lógicos disponibles.
 
