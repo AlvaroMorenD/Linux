@@ -6,12 +6,10 @@
 
 ## 🖊 Autor
 
-**Alvaro Moreno Domínguez**  
+**Álvaro Moreno Domínguez**  
 
 ---
 
-## ⚠ Notas
+## ⚠ Nota
 
 - Algunos comandos requieren permisos de **root** para ejecutarse correctamente.  
-- Las configuraciones de red pueden variar según la distribución de Linux (DHCP vs estático).  
-- Este repositorio está pensado como **material educativo y de referencia**.
