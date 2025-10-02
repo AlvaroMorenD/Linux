@@ -110,7 +110,7 @@ A lo largo del contenido se cubrirán temas como:
 
 ![grupos](/img/grupos.png)
 
-- `cat /etc/group` -> Lista de grupos configurados.
+- `cat /etc/group` -> Muestra todos los grupos configurados en el sistema, incluyendo el nombre del grupo, GID y los usuarios que pertenecen a cada grupo.
 
   ![grupos](/img/grupos2.png)
 
