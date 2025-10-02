@@ -1,11 +1,19 @@
-# 1.- CONOCIENDO EL SERVIDOR LINUX 
+# 1.- EXPLORANDO EL SERVIDOR LINUX
 
-En este apartado se documentan los comandos pedidos en la tarea para conocer y administrar el servidor Linux.  
-Cada comando tiene su explicación y su captura correspondiente.
+En este documento veremos los **comandos básicos y esenciales** para conocer y administrar un servidor Linux.  
+Cada apartado explica su función, acompañado de ejemplos y capturas para facilitar la comprensión.  
 
+A lo largo del contenido se cubrirán temas como:  
+
+- Identificación del sistema y su versión.  
+- Información del kernel, memoria, CPU y discos.  
+- Gestión de usuarios, grupos y permisos.  
+- Configuración y comprobación de la red.  
+- Herramientas para supervisar el estado del servidor.
+  
 ---
 
-## 1. Nombre del host 🏷️
+## 1. Nombre del host 
 - **Comando:** `hostname`  
   Muestra el nombre del host actual del sistema.  
 
