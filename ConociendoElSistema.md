@@ -1,8 +1,7 @@
 # 1.- EXPLORANDO EL SERVIDOR LINUX
 
-En este documento veremos los **comandos básicos y esenciales** para conocer y administrar un servidor Linux.  
-Cada apartado explica su función, acompañado de ejemplos y capturas.  
-
+En este documento veremos los **comandos básicos y esenciales** para aprender y administrar un servidor Linux. 
+ 
 A lo largo del contenido se cubrirán temas como:  
 
 - Identificación del sistema y su versión.  
@@ -14,13 +13,13 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ##  Hostname
-- `hostname` -> Muestra el nombre actual del host.  
+- `hostname` -> Muestra el nombre del host de tu equipo.  
 - `hostname -I` -> Lista las direcciones IP del equipo.  
 - `hostname -f` -> Devuelve el nombre (host + dominio).
 
 ![host](/img/hostname.png)
    
-- `cat /etc/hostname` -> Lee el nombre del host almacenado en el archivo de configuración.  
+- `cat /etc/hostname` -> Lee el nombre del host configurado en el archivo de configuración correspondiente.  
 
 ![host](/img/hostname2.png)
 
@@ -74,7 +73,7 @@ A lo largo del contenido se cubrirán temas como:
 ## Discos y particiones
 - `lsblk` -> Lista los discos y particiones en formato de árbol.  
 - `lsblk -f` -> Muestra los dispositivos de bloque (discos y particiones) incluyendo su sistema de archivos, etiquetas, UUID y punto de montaje.
-- `fdisk -l` -> Lista todos los discos y sus particiones, mostrando detalles como tamaños, número de sectores, tipo de partición y sistema de archivos.
+- `fdisk -l` -> Lista todos los discos y sus particiones, mostrando detalles como sus tamaños, los número de sectores, el tipo de partición y el sistema de archivos empleado.
 
      ![CPU](/img/discos.png)
 
@@ -122,14 +121,14 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## Información de la red
-- `ip a` -> Muestra todas las interfaces de red del sistema, sus direcciones IP, máscara de red, estado de la interfaz (UP/DOWN), si la red está configurada estáticamente o dinámicamente, etc...
+- `ip a` -> Muestra todas las interfaces de red del sistema, sus direcciones IP, máscara de red, estado de la interfaz UP o DOWN, si la red está configurada estáticamente o dinámicamente, etc...
 - `ip r` -> Muestra información sobre la puerta de enlace.
 
     ![ip](/img/red.png)
 
 
 - `ping -c 4 <TuPuertaDeEnlace>` -> Envía 4 paquetes a la puerta de enlace de la red para comprobar la conectividad y medir el tiempo de respuesta.  
-- `ping -c 4 google.es` -> Envía 4 paquetes a un servidor externo para verificar la conectividad a Internet y medir la latencia.
+- `ping -c 4 google.es` -> Envía 4 paquetes a un servidor externo (en este caso a **google.es** para verificar la conectividad a Internet y medir la latencia.
 
 
     ![ip](/img/ping.png)
@@ -137,7 +136,7 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## DNS
-- `nslookup google.es` -> Consulta el nombre de dominio `google.es` y muestra **qué servidor DNS respondió** la consulta y la **dirección IP** asociada al dominio. Responde el servidor DNS que tu sistema está usando y muestra la IP pública que corresponde al dominio
+- `nslookup google.es` -> Consulta el nombre de dominio `google.es` y muestra **qué servidor DNS respondió la consulta** y la **dirección IP** asociada al dominio. Responde el servidor DNS que tu sistema está usando y muestra la IP pública que corresponde al dominio
 
 `nslookup 8.8.8.8` -> Consulta la dirección IP `8.8.8.8` "servidor publico de Google" y muestra información sobre su dominio inverso y propietario.  
    
@@ -146,7 +145,7 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## Configuración de red
-- `cat /etc/network/interfaces` -> Configuración de interfaces de red. En mi caso está configurado por DHCP, pero estáticamente sería poner manualmente la IP, máscara, puerta de enlace y DNS. Ejemplo:
+- `cat /etc/network/interfaces` -> Configuración de las interfaces de red. En mi caso está configurado por DHCP, pero estáticamente sería introducir manualmente la IP, máscara, puerta de enlace y DNS. Un ejemplo es:
 
 ```text
 auto eth0
@@ -171,7 +170,7 @@ dns-nameservers 8.8.8.8 8.8.4.4
 ---
 
 ## Reiniciar la red
-- `systemctl status networking` -> Muestra el estado actual del servicio de red, indicando si está activo, inactivo o fallando.
+- `systemctl status networking` -> Muestra el estado del servicio de red, indica si está activo, inactivo o bloqueado.
 - `systemctl restart networking` -> Reinicia el servicio para aplicar cambios en posibles configuraciones.
 
 ![red](/img/reiniciarRed.png)
@@ -179,8 +178,8 @@ dns-nameservers 8.8.8.8 8.8.4.4
 ---
 
 ## Interfaces de red (ifup/ifdown)
-- `ifup <TuinterfazDeRed>` -> Activa la interfaz de red.  
-- `ifdown <TuinterfazDeRed>` -> Desactiva la interfaz de red.  
+- `ifup <TuinterfazDeRed>` -> Activa la interfaz de red especificada.  
+- `ifdown <TuinterfazDeRed>` -> Desactiva la interfaz de red especificada.  
 - `ifdown <TuinterfazDeRed> && ifup <TuinterfazDeRed>` -> Primero descativa la interfaz de red y después la vuelve a activar
 
 ![red](/img/subirybajarRed.png)
