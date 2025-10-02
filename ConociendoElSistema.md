@@ -122,14 +122,17 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## Información de la red
- Muestra todas las interfaces de red del sistema, sus direcciones IP, máscara de red, estado de la interfaz (UP/DOWN) y otra información relevante de conectividad.
- - `ip r` -> Muestra la puerta de enlace.
+- `ip a` -> Muestra todas las interfaces de red del sistema, sus direcciones IP, máscara de red, estado de la interfaz (UP/DOWN), si la red está configurada estáticamente o dinámicamente, etc...
+- `ip r` -> Muestra información sobre la puerta de enlace.
 
     ![ip](/img/red.png)
 
 
-- `ping -c 4 <PuertaDeEnlace>` -> Verifica conectividad con el gateway.  
-- `ping -c 4 google.es` -> Verifica conectividad a Internet.  
+- `ping -c 4 <TuPuertaDeEnlace>` -> Envía 4 paquetes a la puerta de enlace de la red para comprobar la conectividad y medir el tiempo de respuesta.  
+- `ping -c 4 google.es` -> Envía 4 paquetes a un servidor externo para verificar la conectividad a Internet y medir la latencia.
+
+
+    ![ip](/img/ping.png)
 
 ---
 
