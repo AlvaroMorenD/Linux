@@ -1,6 +1,6 @@
 # 🐧 Linux - Comandos Básicos
 
-[Guía completa de comandos](ConociendoElSistema.md)
+[Guía básica de comandos](ConociendoElSistema.md)
 
 ---
 
