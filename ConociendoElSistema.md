@@ -73,8 +73,8 @@ A lo largo del contenido se cubrirán temas como:
 
 ## Discos y particiones
 - `lsblk` -> Lista los discos y particiones en formato de árbol.  
-- `lsblk -f` -> Incluye tipo de sistema de archivos, etiquetas y UUID.  
-- `fdisk -l` -> Muestra particiones, sectores y tamaños de discos detectados.
+- `lsblk -f` -> Muestra los dispositivos de bloque (discos y particiones) incluyendo su sistema de archivos, etiquetas, UUID y punto de montaje.
+- `fdisk -l` -> Lista todos los discos y sus particiones, mostrando detalles como tamaños, número de sectores, tipo de partición y sistema de archivos.
 
      ![CPU](/img/discos.png)
 
