@@ -24,7 +24,7 @@ A lo largo del contenido se cubrirán temas como:
 
 ![host](/img/hostname2.png)
 
-- `hostnamectl set-hostname <NuevoNombre>` -> Cambia el nombre del host de forma permanente.
+- `hostnamectl set-hostname <Nombre>` -> Cambia el nombre del host.
 
 ![host](/img/host3.png)
 
