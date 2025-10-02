@@ -1,4 +1,4 @@
-# 1.- EXPLORANDO EL SERVIDOR LINUX
+# EXPLORANDO EL SERVIDOR LINUX
 
 En este documento veremos los **comandos básicos y esenciales** para aprender y administrar un servidor Linux. 
  
