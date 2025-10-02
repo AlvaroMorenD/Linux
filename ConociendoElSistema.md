@@ -14,7 +14,7 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## 1. Nombre del host 
-`hostname`  Muestra el nombre del host actual del sistema.  
+`hostname` ->  Muestra el nombre del host actual del sistema.  
 
 - **Comando:** `hostname -I`  
   Muestra las direcciones IP asignadas al host.  
