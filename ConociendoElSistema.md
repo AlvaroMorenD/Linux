@@ -71,7 +71,7 @@ A lo largo del contenido se cubrirán temas como:
 
 ---
 
-## 💽 Discos y particiones
+## Discos y particiones
 - `lsblk` -> Lista los discos y particiones en formato de árbol.  
 - `lsblk -f` -> Incluye tipo de sistema de archivos, etiquetas y UUID.  
 - `fdisk -l` -> Muestra particiones, sectores y tamaños de discos detectados.
@@ -81,13 +81,13 @@ A lo largo del contenido se cubrirán temas como:
 
 ---
 
-## 📂 Sistemas montados
+## Sistemas montados
 - `df -h` -> Uso de disco por sistema de archivos (formato legible).  
 - `df -hT` -> Igual que el anterior, pero incluye el tipo de sistema de archivos.  
 
 ---
 
-## 📁 Tamaño de carpetas
+## Tamaño de carpetas
 - `du -h` -> Tamaño de todos los archivos y carpetas recursivamente.  
 - `du -h /home/` -> Tamaño de todos los subdirectorios en `/home`.  
 - `du -hs /home` -> Tamaño total de la carpeta `/home`.  
@@ -95,7 +95,7 @@ A lo largo del contenido se cubrirán temas como:
 
 ---
 
-## 👥 Usuarios y grupos
+## Usuarios y grupos
 - `cat /etc/passwd` / `getent passwd` -> Lista de usuarios del sistema.  
 - `cat /etc/shadow` / `getent shadow` -> Contraseñas encriptadas (requiere root).  
 - `cat /etc/group` / `getent group` -> Lista de grupos configurados.  
@@ -104,7 +104,7 @@ A lo largo del contenido se cubrirán temas como:
 
 ---
 
-## 🌐 Información de la red
+## Información de la red
 - `ip a` -> Lista interfaces de red, direcciones IP y su estado (UP/DOWN).  
 - `ip r` -> Muestra la tabla de enrutamiento y la puerta de enlace por defecto.  
 - `ping -c 4 <PuertaDeEnlace>` -> Verifica conectividad con el gateway.  
@@ -112,29 +112,29 @@ A lo largo del contenido se cubrirán temas como:
 
 ---
 
-## 🔍 DNS
+## DNS
 - `nslookup google.es` -> Muestra qué DNS responde y su dirección IP.  
 - `nslookup 8.8.8.8` -> Muestra información sobre el propietario de la IP.  
 
 ---
 
-## ⚙️ Configuración de red
+## Configuración de red
 - `cat /etc/network/interfaces` -> Configuración de interfaces de red.  
 
 ---
 
-## 🌐 Configuración de DNS
+## Configuración de DNS
 - `cat /etc/resolv.conf` -> Lista los servidores DNS configurados.  
 
 ---
 
-## 🔄 Reiniciar la red
+## Reiniciar la red
 - `systemctl status networking` -> Estado actual del servicio de red.  
 - `systemctl restart networking` -> Reinicia el servicio para aplicar cambios.  
 
 ---
 
-## 🖧 Interfaces de red (ifup/ifdown)
+## Interfaces de red (ifup/ifdown)
 - `ifup eth0` -> Activa la interfaz de red `eth0`.  
 - `ifdown eth0` -> Desactiva la interfaz de red `eth0`.  
 - `ifdown eth0 && ifup eth0` -> Reinicia la interfaz aplicando configuración nueva.  
