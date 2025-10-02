@@ -146,7 +146,14 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## Configuración de red
-- `cat /etc/network/interfaces` -> Configuración de interfaces de red. En mi caso está configurado por DHCP
+- `cat /etc/network/interfaces` -> Configuración de interfaces de red. En mi caso está configurado por DHCP, pero estáticamente sería poner manualmente la IP, máscara, puerta de enlace y DNS. Ejemplo:
+
+`auto eth0
+iface eth0 inet static
+address 192.168.1.100
+netmask 255.255.255.0
+gateway 192.168.1.1
+dns-nameservers 8.8.8.8 8.8.4.4`
 
 ![RED](/img/comprobarRed.png)
 
