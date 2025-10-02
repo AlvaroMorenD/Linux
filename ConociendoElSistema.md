@@ -16,8 +16,10 @@ A lo largo del contenido se cubrirán temas como:
 ## 🔖 Hostname
 - `hostname` -> Muestra el nombre actual del host.  
 - `hostname -I` -> Lista las direcciones IP asignadas al equipo.  
-- `hostname -f` -> Devuelve el nombre FQDN (host + dominio).  
-- `hostnamectl set-hostname <NuevoNombre>` -> Cambia el nombre del host de forma permanente.  
+- `hostname -f` -> Devuelve el nombre FQDN (host + dominio).
+
+![host](/img/host.png)
+   
 - `cat /etc/hostname` -> Lee el nombre del host almacenado en el archivo de configuración.  
 
 ---
