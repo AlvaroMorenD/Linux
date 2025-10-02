@@ -140,6 +140,8 @@ A lo largo del contenido se cubrirán temas como:
 - `nslookup google.es` -> Muestra qué DNS responde y su dirección IP.  
 - `nslookup 8.8.8.8` -> Muestra información sobre el propietario de la IP.  
 
+    ![DNS](/img/DNS.png)
+
 ---
 
 ## Configuración de red
