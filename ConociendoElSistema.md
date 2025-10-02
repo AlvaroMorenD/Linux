@@ -101,13 +101,16 @@ A lo largo del contenido se cubrirán temas como:
 ---
 
 ## Usuarios y grupos
-- `cat /etc/passwd` -> Lista los usuarios del sistema.
+- `cat /etc/passwd` -> Muestra la lista de todos los usuarios del sistema junto con información adicional como UID, GID, directorio home y shell predeterminado.
 
 ![Usuarios](/img/usuarios.png)
 
 
-- `cat /etc/shadow` -> Contraseñas encriptadas de los usuarios del sistema  
-- `cat /etc/group` -> Lista de grupos configurados.  
+- `cat /etc/shadow` -> Contraseñas encriptadas de los usuarios del sistema
+- `cat /etc/group` -> Lista de grupos configurados.
+![grupos](/img/grupos.png)
+
+
 - `cat /etc/gshadow` / `getent gshadow` -> Contraseñas de grupos.  
 - `cat /etc/nsswitch.conf` -> Define dónde busca la información (archivos locales, DNS, etc.).  
 
